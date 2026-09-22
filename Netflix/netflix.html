@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:#2F2C38;
+            color: white;
+        }
+        .danh-sach-muc{
+            list-style:none;
+            display:flex;
+            gap: 20px;
+            align-items:center;
+        }
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .lien-ket-muc{
+            text-decoration:none;
+            color:#DBDBDD;
+        }
+        .danh-muc{
+            display:flex;
+        }
+        .muc{
+            padding:15px;
+            border-radius:25px;
+        }
+        .muc:hover{
+            background-color:gray;
+        }
+        .logo{
+            width:10%;
+        }
+        .avata{
+            width:80%;
+        }
+        .dang-chon{
+            background-color:#2F2C38;
+        }
+
+        .banner{
+            background-color:white;
+            width:95%;
+            height: 40vh;
+            margin: 20px auto;
+            border-radius: 20px;
+        }
+        .banner-anh{
+            width:100%;
+            border-radius: 20px;
+        }
+        .danh-sach-the-loai{
+            width:95%;
+            background-color:#ff0000;
+            height: 20vh;
+            margin: 20px auto;
+        }
+        .phim{
+            display:flex;
+            justify-content:space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="danh-muc">
+        <ul class="danh-sach-muc">
+            <li class="muc"><a class="lien-ket-muc" href="#"><img class="logo" src="/Anh/logonetflix.svg" alt=""></a></li>
+            <li class="muc"><a class="lien-ket-muc" href="#">Trang chủ</a></li>
+            <li class="muc"><a class="lien-ket-muc" href="#">Nhân vật</a></li>
+            <li class="muc"><a class="lien-ket-muc" href="#">Series</a></li>
+            <li class="muc"><a class="lien-ket-muc" href="#">Phim</a></li>
+            <li class="muc"><a class="lien-ket-muc" href="#">Mới & Phổ biến</a></li>
+            <li class="muc"><a class="lien-ket-muc" href="#">Netflix của tôi</a></li>
+            <li class="muc"><a class="lien-ket-muc" href="#">Home</a></li>
+        </ul>
+    </nav>
+    <div class="chuc-nang">
+        <div class="tim-kiem">
+            <div class="thong-tin">
+                <img class="avata" src="/Anh/treemnf.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="banner">
+            <img class="banner-anh" src="/Anh/treemnf.jpg" alt=""></a>
+        </div>
+        <div class="danh-sach-the-loai">
+            <div class="the-loai">
+                <div class="ten-the-loai">
+                    <h2>Có thể bạn chưa xem</h2>
+                </div>
+                <div class="danh-sach-phim">
+                    <img src="/Anh/tb.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
