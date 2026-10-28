@@ -1,121 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color:#2F2C38;
-            color: white;
-        }
-        .danh-sach-muc{
-            list-style:none;
-            display:flex;
-            gap: 20px;
-            align-items:center;
-        }
-        header{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
-        .lien-ket-muc{
-            text-decoration:none;
-            color:#DBDBDD;
-        }
-        .danh-muc{
-            display:flex;
-        }
-        .muc{
-            padding:15px;
-            border-radius:25px;
-        }
-        .muc:hover{
-            background-color:gray;
-        }
-        .logo{
-            width:10%;
-        }
-        .avata{
-            width:80%;
-        }
-        .dang-chon{
-            background-color:#2F2C38;
-        }
-
-        .banner{
-            background-color:white;
-            width:95%;
-            height: 40vh;
-            margin: 20px auto;
-            border-radius: 20px;
-        }
-        .banner-anh{
-            width:100%;
-            border-radius: 20px;
-        }
-        .danh-sach-the-loai{
-            width:95%;
-            background-color:#ff0000;
-            height: 20vh;
-            margin: 20px auto;
-        }
-        .phim{
-            display:flex;
-            justify-content:space-between;
-        }
-        .phim-poster{
-            width: 24%;
-            height: 15vh;
-            border-radius: 15px;
-        }
-
-        .danh-sach-nhan-vat{
-            display:flex;
-            justify-content:space-between;
-        }
-
-    </style>
-</head>
-<body>
-    <nav class="danh-muc">
-        <ul class="danh-sach-muc">
-            <li class="muc"><a class="lien-ket-muc" href="#"><img class="logo" src="/Anh/logonetflix.svg" alt=""></a></li>
-            <li class="muc"><a class="lien-ket-muc" href="#">Trang chủ</a></li>
-            <li class="muc"><a class="lien-ket-muc" href="#">Nhân vật</a></li>
-            <li class="muc"><a class="lien-ket-muc" href="#">Series</a></li>
-            <li class="muc"><a class="lien-ket-muc" href="#">Phim</a></li>
-            <li class="muc"><a class="lien-ket-muc" href="#">Mới & Phổ biến</a></li>
-            <li class="muc"><a class="lien-ket-muc" href="#">Netflix của tôi</a></li>
-            <li class="muc"><a class="lien-ket-muc" href="#">Home</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Netflix/style.css" />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <ul>
+          <li>
+            <a href="#"
+              ><img
+                style="width: 70px; height: 30px"
+                src="/Anh/netflit.jpg"
+                alt=""
+            /></a>
+          </li>
+          <li class="muc dang-chon">
+            <a href="#" class="lien-ket-muc">Trang chủ</a>
+          </li>
+          <li class="muc"><a href="#">Nhân vật</a></li>
+          <li class="muc"><a href="#">Series</a></li>
+          <li class="muc"><a href="#">Phim</a></li>
+          <li class="muc"><a href="#">Mới & phổ biến</a></li>
+          <li class="muc"><a href="#">Netflix của tôi</a></li>
+          <li class="muc"><a href="#">Duyệt tìm theo ngôn ngữ</a></li>
         </ul>
-    </nav>
-    <div class="chuc-nang">
-        <div class="tim-kiem">
-            <div class="thong-tin">
-                <img class="avata" src="/Anh/treemnf.jpg" alt=""></a>
-            </div>
+      </div>
+      <div class="chuc-nang">
+        <div class="tim-kiem"></div>
+        <div class="logo">
+          <img src="/Anh/treemnf.jpg" alt="" />
         </div>
-    </div>
+      </div>
+    </header>
     <main>
-        <div class="banner">
-            <img class="banner-anh" src="/Anh/treemnf.jpg" alt=""></a>
+      <div class="banner">
+        <a href=""><img src="/Anh/netflit.jpg" alt="" /></a>
+      </div>
+      <div class="danh-sach-the-loai">
+        <div class="co-the-ban-chua-xem">
+          <p>Có thể bạn chưa xem</p>
+          <div class="phim">
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+          </div>
         </div>
-        <div class="danh-sach-the-loai">
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Có thể bạn chưa xem</h2>
-                </div>
-                <div class="danh-sach-phim">
-                    <img src="/Anh/tb.webp" class="phim-poster" alt="">
-                    <img src="/Anh/tb.webp" class="phim-poster" alt="">
-                    <img src="/Anh/tb.webp" class="phim-poster" alt="">
-                    <img src="/Anh/tb.webp" class="phim-poster" alt="">
-                </div>
-            </div>
+        <div class="co-the-ban-chua-xem">
+          <p>Phim hài hước</p>
+          <div class="phim">
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+          </div>
         </div>
-
+        <div class="co-the-ban-chua-xem">
+          <p>Hoạt hình</p>
+          <div class="phim">
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="co-the-ban-chua-xem">
+          <p>Mọi người đang xem</p>
+          <div class="phim">
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="co-the-ban-chua-xem">
+          <p>Top 10</p>
+          <div class="phim">
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="co-the-ban-chua-xem">
+          <p>Giáo dục và giải trí</p>
+          <div class="phim">
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="co-the-ban-chua-xem">
+          <p>Nhân vật</p>
+          <div class="nhan_vat">
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            <a href="#"><img src="/Anh/netflit.jpg" alt="" /></a>
+            
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+    <footer>
+      <div class="noi_dung">
+        <a href="#">Mô tả âm thanh</a>
+        <a href="#">Việc làm</a>
+        <a href="#">Tùy chọn cookie</a>
+      </div>
+      <div class="noi_dung">
+        <a href="#">Thẻ tặng quà</a>
+        <a href="#">Điều khoản sử dụng</a>
+        <a href="#">Thông tin doanh nghiệp</a>
+      </div>
+      <div class="noi_dung">
+        <a href="#">Trung tâm đa phương tiện</a>
+        <a href="#">Quyền riêng tư</a>
+        <a href="#">Liên hệ với chúng tôi</a>
+      </div>
+      <div class="noi_dung">
+        <a href="#">Quan hệ với nhà đầu tư</a>
+        <a href="#">Thông báo pháp lý</a>
+      </div>
+    </footer>
+  </body>
 </html>

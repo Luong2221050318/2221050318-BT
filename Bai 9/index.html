@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9</title>
+</head>
+<body>
+    <div class="che-do-sang">
+        <h1 class="che-do">Chế độ sáng</h1>
+        <img class="anh-che-do" src="/Anh/mattroi.png" alt="Chế độ sáng">
+        <div class="chuc-nang">
+            <button onclick="doiCheDo()">Thay đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        let cheDo = true;
+        function doiCheDo(){
+            if(cheDo == true){
+                document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+                document.getElementsByTagName("h1")[0].style.color = "white";
+                document.getElementsByTagName("h1")[1].style.color = "white";
+                document.getElementsByTagName("h1")[1].innerHTML = "Chế độ tối";
+                document.getElementsByTagName("anh-che-do")[0].src ="/Anh/trang.png";
+                cheDo = false;
+
+            }
+            else{
+                document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+                document.getElementsByTagName("h1")[0].style.color = "black";
+                document.getElementsByTagName("h1")[1].style.color = "black";
+                document.getElementsByTagName("h1")[1].innerHTML = "Chế độ sáng";
+                document.getElementsByTagName("anh-che-do")[0].src ="/Anh/mattroi.png";
+                cheDo = true;
+            }
+        }
+    </script>
+</body>
+</html>
