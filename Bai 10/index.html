@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video{
+            margin:auto;
+            width: 30%;
+            height: 35%;
+            justify-content: space-between;
+        }
+        iframe{
+            width: 500px;
+            height: 400px;
+            justify-content: space-between;
+        }
+        .danh-sach{
+            width:80%;
+            display: flex;
+            margin: 50px auto;    
+            justify-content: space-between;
+        }
+        .anh{
+            width: 24%;
+            height:100px;
+            background-color: rgb(63, 206, 238);
+        }
+        img{
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="video">
+        <iframe 
+            width="1211" 
+            height="681" 
+            src="https://www.youtube.com/embed/Y5VoCfbB6As?list=RDY5VoCfbB6As" 
+            title="ERIK x Kai Đinh - ‘Váy Cưới’ | Official MV | From the Wedding Ceremony of Ms. Vien Vibi and Mr. Linh" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <p class="ten">ERIK x Kai Đinh - VÁY CƯỚI | Official MV</p>
+    </div>
+    <div class="danh-sach">
+        <div class="anh" onclick="chonVid(1)">
+            <img src="/Anh/timem.jpg" alt="">
+            <p>TÌM EM - Official Music Video</p>
+        </div>
+        <div class="anh" onclick="chonVid(2)">
+            <img src="/Anh/nguoitotnhattrendoi.jpg" alt="">
+            <p>NGƯỜI TỐT NHẤT TRONG ĐỜI - Quân A.P | Official MV</p>
+        </div>
+        <div class="anh" onclick="chonVid(3)">
+            <img src="/Anh/motdoi.jpg" alt="">
+            <p>MỘT ĐỜI - 14 Casper & Bon Nghiêm (feat. buitruonglinh) (Track 03 - Album 'SỐ KHÔNG')</p>
+        </div>
+        <div class="anh" onclick="chonVid(4)">
+            <img src="/Anh/leduong.jpg" alt="">
+            <p>LỄ ĐƯỜNG của Hải Long & Salim | KAI ĐINH | Official MV</p>
+        </div>
+    </div>
+    <script>
+        var danhSachVD = [
+            {
+                id: 1,
+                ten: "TÌM EM - Official Music Video",
+                duongDanAnh: "/Anh/timem.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/gJAbDSse5WM"
+                
+            },
+            {
+                id: 2,
+                ten: "NGƯỜI TỐT NHẤT TRONG ĐỜI - Quân A.P | Official MV",
+                duongDanAnh: "/Anh/nguoitotnhattrendoi.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/3_-gNSGyLfE"
+            },
+            {
+                id: 3,
+                ten: "MỘT ĐỜI - 14 Casper & Bon Nghiêm (feat. buitruonglinh) (Track 03 - Album 'SỐ KHÔNG')",
+                duongDanAnh: "/Anh/motdoi.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/JgTZvDbaTtg"
+            },
+            {
+                id: 4,
+                ten: "LỄ ĐƯỜNG của Hải Long & Salim | KAI ĐINH | Official MV",
+                duongDanAnh: "/Anh/leduong.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/XqgyD0yadH0"
+            },
+        ];
+        function chonVid(id){
+            for (let i=0; i < danhSachVD.length; i++){
+                if(danhSachVD[i].id == id){
+                    document.getElementsByClassName("ten")[0].textContent = danhSachVD[i].ten;
+                    document.getElementsByTagName("iframe")[0].src = danhSachVD[i].duongDanYoutube;
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
